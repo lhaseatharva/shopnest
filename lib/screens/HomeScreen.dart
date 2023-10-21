@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-import 'package:shopnest/screens/ClothesScreen.dart';
+import 'package:shopnest/screens/Clothes/ClothesScreen.dart';
 
 void main() {
   runApp(const MyApp());

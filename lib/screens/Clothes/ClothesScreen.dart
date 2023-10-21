@@ -15,7 +15,7 @@ class _ClothesScreenState extends State<ClothesScreen> {
       "name": "Shirt 1",
       "description": "A stylish shirt.",
       "image":
-          "https://assets.ajio.com/medias/sys_master/root/20230602/Dtgx/64795c65d55b7d0c633c778c/-1117Wx1400H-462323964-white-MODEL.jpg", // Replace with actual image URL
+          "https://5.imimg.com/data5/SELLER/Default/2023/1/RZ/NN/OR/4420510/mens-green-shirt-250x250.png"
     },
     {
       "id": 2,
