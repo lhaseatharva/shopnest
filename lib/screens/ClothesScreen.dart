@@ -49,7 +49,7 @@ class _ClothesScreenState extends State<ClothesScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Clothes'),
-        backgroundColor: Theme.of(context).colorScheme.secondary,
+        backgroundColor: Colors.deepPurple.shade300,
       ),
       body: ListView.builder(
         itemCount: clothesProducts.length,

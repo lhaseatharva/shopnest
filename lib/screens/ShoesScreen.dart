@@ -48,7 +48,7 @@ class _ShoesScreenState extends State<ShoesScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Shoes'),
-        backgroundColor: Theme.of(context).colorScheme.secondary,
+        backgroundColor: Colors.deepPurple.shade300,
       ),
       body: ListView.builder(
         itemCount: shoesProducts.length,

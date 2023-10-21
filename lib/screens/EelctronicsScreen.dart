@@ -49,7 +49,7 @@ class _ElectronicsScreenState extends State<ElectronicsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Electronics'),
-        backgroundColor: Theme.of(context).colorScheme.secondary,
+        backgroundColor: Colors.deepPurple.shade300,
       ),
       body: ListView.builder(
         itemCount: electronicsProducts.length,
