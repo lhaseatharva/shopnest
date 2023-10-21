@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:shopnest/screens/EelctronicsScreen.dart';
+import 'package:shopnest/screens/ClothesScreen.dart';
+import 'package:shopnest/screens/ShoesScreen.dart';
 import 'dart:convert';
-
-import 'package:shopnest/screens/Clothes/ClothesScreen.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
 }
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -33,7 +34,11 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   List<Map<String, dynamic>> categories = [];
-  List<String> categoriesToDisplay = ['Clothes'];
+  List<String> categoriesToDisplay = [
+    'Clothes',
+    'Electronics',
+    'Shoes',
+  ];
 
   @override
   void initState() {
@@ -189,9 +194,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     title: Text(categoryName),
                     onTap: () {
                       if (categoriesToDisplay.contains(categoryName)) {
-                        Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => ClothesScreen(),
-                        ));
+                        if (categoryName == "Electronics") {
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => ElectronicsScreen(),
+                          ));
+                        } else if (categoryName == "Clothes") {
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => ClothesScreen(),
+                          ));
+                        } else if (categoryName == "Shoes") {
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => ShoesScreen(),
+                          ));
+                        }
                       }
                     },
                   ),
