@@ -144,7 +144,6 @@ class _ShoesScreenState extends State<ShoesScreen> {
             ),
             TextButton(
               onPressed: () {
-                // Implement the action here, e.g., navigate to payment page
                 Navigator.of(context).pop();
               },
               child: Text(action),

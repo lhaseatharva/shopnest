@@ -145,7 +145,6 @@ class _ElectronicsScreenState extends State<ElectronicsScreen> {
             ),
             TextButton(
               onPressed: () {
-                // Implement the action here, e.g., navigate to payment page
                 Navigator.of(context).pop();
               },
               child: Text(action),
