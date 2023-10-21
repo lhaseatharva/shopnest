@@ -15,7 +15,7 @@ class _ClothesScreenState extends State<ClothesScreen> {
       "name": "Shirt 1",
       "description": "A stylish shirt.",
       "image":
-          "https://example.com/shirt1.jpg", // Replace with actual image URL
+          "https://assets.ajio.com/medias/sys_master/root/20230602/Dtgx/64795c65d55b7d0c633c778c/-1117Wx1400H-462323964-white-MODEL.jpg", // Replace with actual image URL
     },
     {
       "id": 2,
@@ -66,7 +66,7 @@ class _ClothesScreenState extends State<ClothesScreen> {
                   Image.network(
                     product["image"] as String,
                     width: double.infinity,
-                    height: 120,
+                    height: 160,
                     fit: BoxFit.cover,
                     errorBuilder: (context, error, stackTrace) {
                       // Handle image load errors
